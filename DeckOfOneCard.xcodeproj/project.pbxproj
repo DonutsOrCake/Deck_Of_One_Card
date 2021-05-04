@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4728152D2641DABC0031E3B8 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728152C2641DABC0031E3B8 /* Card.swift */; };
+		4728152F2641E0F60031E3B8 /* CardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4728152E2641E0F60031E3B8 /* CardController.swift */; };
+		472815312641E2F20031E3B8 /* CardError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472815302641E2F20031E3B8 /* CardError.swift */; };
+		472F87C32642027200A8DFAA /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F87C22642027200A8DFAA /* CardViewController.swift */; };
 		7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23723AA9BB700D23AFA /* AppDelegate.swift */; };
 		7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */; };
 		7E62A23F23AA9BB700D23AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E62A23D23AA9BB700D23AFA /* Main.storyboard */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4728152C2641DABC0031E3B8 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		4728152E2641E0F60031E3B8 /* CardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardController.swift; sourceTree = "<group>"; };
+		472815302641E2F20031E3B8 /* CardError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardError.swift; sourceTree = "<group>"; };
+		472F87C22642027200A8DFAA /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 		7E62A23423AA9BB700D23AFA /* DeckOfOneCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeckOfOneCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E62A23723AA9BB700D23AFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7E62A23923AA9BB700D23AFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +46,63 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		472815252641DA3D0031E3B8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				472815272641DA560031E3B8 /* Storyboard */,
+				472815262641DA4F0031E3B8 /* Custom Views */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		472815262641DA4F0031E3B8 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		472815272641DA560031E3B8 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		472815282641DA810031E3B8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4728152A2641DA910031E3B8 /* Model Controllers */,
+				472815292641DA880031E3B8 /* View Controllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		472815292641DA880031E3B8 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				472F87C22642027200A8DFAA /* CardViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		4728152A2641DA910031E3B8 /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4728152E2641E0F60031E3B8 /* CardController.swift */,
+			);
+			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		4728152B2641DA990031E3B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4728152C2641DABC0031E3B8 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		7E62A22B23AA9BB700D23AFA = {
 			isa = PBXGroup;
 			children = (
@@ -58,11 +123,10 @@
 		7E62A23623AA9BB700D23AFA /* DeckOfOneCard */ = {
 			isa = PBXGroup;
 			children = (
-				7E62A23D23AA9BB700D23AFA /* Main.storyboard */,
-				7E62A25523AA9D5300D23AFA /* View Controllers */,
-				7E62A25423AA9D4800D23AFA /* Model Controllers */,
-				7E62A25223AA9D3E00D23AFA /* Models */,
-				7E62A25323AA9D4200D23AFA /* Helpers */,
+				4728152B2641DA990031E3B8 /* Models */,
+				472815282641DA810031E3B8 /* Controllers */,
+				472815252641DA3D0031E3B8 /* Views */,
+				7E62A25323AA9D4200D23AFA /* Helper and extension */,
 				7E62A24B23AA9BBE00D23AFA /* Resources */,
 			);
 			path = DeckOfOneCard;
@@ -80,33 +144,13 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		7E62A25223AA9D3E00D23AFA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		7E62A25323AA9D4200D23AFA /* Helpers */ = {
+		7E62A25323AA9D4200D23AFA /* Helper and extension */ = {
 			isa = PBXGroup;
 			children = (
 				7E62A25023AA9D3400D23AFA /* UIViewControllerExtension.swift */,
+				472815302641E2F20031E3B8 /* CardError.swift */,
 			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		7E62A25423AA9D4800D23AFA /* Model Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "Model Controllers";
-			sourceTree = "<group>";
-		};
-		7E62A25523AA9D5300D23AFA /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
+			path = "Helper and extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,9 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4728152F2641E0F60031E3B8 /* CardController.swift in Sources */,
+				472F87C32642027200A8DFAA /* CardViewController.swift in Sources */,
 				7E62A25123AA9D3400D23AFA /* UIViewControllerExtension.swift in Sources */,
+				472815312641E2F20031E3B8 /* CardError.swift in Sources */,
 				7E62A23823AA9BB700D23AFA /* AppDelegate.swift in Sources */,
 				7E62A23A23AA9BB700D23AFA /* SceneDelegate.swift in Sources */,
+				4728152D2641DABC0031E3B8 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
